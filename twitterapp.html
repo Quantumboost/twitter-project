@@ -1,0 +1,36 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Pseudotwitter Application</title>
+<link rel="stylesheet" type="text/css" href="default.css">
+<script src="jquery-1.9.1.js"/>
+<!--script src="underscore.js"/-->
+<!--script src="backbone.js"/-->
+<script>
+var titleBase = document.title;
+var newTweets = 0;
+
+function setTitle(value) {
+	if(value > 0) {
+		document.title = "(" + value + ") " + titleBase;
+	} else {
+		document.title = titleBase;
+	}
+}
+
+function update() {
+	newTweets += 5;
+	setTitle(newTweets);
+}
+
+//var intervalID = setInterval(update, 300);
+</script>
+</head>
+<body>
+<h1>Twitter Emulation System Alpha</h1>
+<table>
+
+<p><div class='tweetListing'><div name='head'><h2>Tweets</h2></div></div></p>
+<p><button type="button" onclick="update()">Update</button></p>
+</body>
+</html>
