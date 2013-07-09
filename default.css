@@ -2,17 +2,24 @@ h1 {color:sienna;}
 p {margin-left:20px;}
 
 .tweetListing {
-    border-top:20px solid red;
-	border-left:10px solid red;
-	min-height: 40px;
-	min-width: 500px;
+    border-top:3px solid black;
+	border-left:3px solid black;
+	min-height:40px;
+	min-width:500px;
 	max-width:700px;
 	margin:10px 20px 30px 40px;
 	background: sienna;
 }
 
-.tweetlisting>div {
+.tweetListing>div {
     border:1px solid black;
 	min-height: 20px;
-    background: #606060;
+    background: #303040;
+	color: cyan;
+}
+
+.tweetListing .countHeading {
+	border:5px solid white;
+	background:#C0FFFF;
+	color: black;
 }
